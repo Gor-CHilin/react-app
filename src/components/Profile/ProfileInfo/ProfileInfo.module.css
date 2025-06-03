@@ -4,3 +4,7 @@
 .Profile_info_img{
   width: 900px;
 }
+.mainPhoto{
+  max-width: 300px;
+  border-radius: 50px;
+}
