@@ -1,0 +1,21 @@
+
+.paginator {
+  margin: 15px;
+}
+.pageNumber {
+  padding: 7px;
+  border: 2px solid white;
+}
+
+.pageNumber.selectedPage {
+  margin: 3px;
+  font-weight: bold;
+color: white;
+  background-color:black;
+}
+
+.nextButton:active{
+  background-color:black;
+  color: white;
+
+}
