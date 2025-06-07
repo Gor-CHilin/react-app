@@ -1,6 +1,6 @@
 import react from 'react'
 import axios from 'axios'
-import { savePhoto } from '../redux/profile-reducer'
+import { savePhoto, saveProfile } from '../redux/profile-reducer'
 
 const instance = axios.create({
 	withCredentials: true,
@@ -23,7 +23,7 @@ export const usersAPI = {
 		return instance.delete(`follow/${userId}`)
 	},
 	getProfile(userId) {
-		console.error('Obsolete method ,Please profileApi project')
+		
 		return profileAPI.getProfile(userId)
 	},
 }
@@ -49,6 +49,9 @@ export const profileAPI = {
 			},
 		})
 	},
+	saveProfile(profile){
+		return instance.put(`profile`, profile)
+	}
 }
 
 export const authAPI = {
